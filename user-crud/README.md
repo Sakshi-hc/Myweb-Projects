@@ -178,16 +178,8 @@ The application comes with 5 sample users:
 4. Test thoroughly
 5. Submit a pull request
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🙏 Acknowledgments
-
-- Spring Boot team for the excellent framework
-- Font Awesome for the beautiful icons
-- The open-source community for inspiration
 
 ---
+
 
 **Enjoy managing your users with style! 🎉** 
