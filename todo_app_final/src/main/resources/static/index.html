@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Todo • Clean</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div>
+        <h1>Todo</h1>
+        <p class="subtitle"><em>Organize your day, your way.</em></p>
+      </div>
+      <div class="controls-top">
+        <button id="sort-toggle" class="btn">
+  Sort by: <span id="sort-label">Oldest First</span>
+</button>
+
+      </div>
+    </header>
+
+    <main>
+      <form id="task-form" class="card">
+        <input id="title" placeholder="What do you want to do?" required />
+        <textarea id="description" placeholder="Description (optional)" rows="2"></textarea>
+        <input id="due" type="datetime-local" />
+        <select id="priority">
+          <option value="1">High</option>
+          <option value="2" selected>Normal</option>
+          <option value="3">Low</option>
+        </select>
+        <input id="edit-id" type="hidden" />
+        <button type="submit" id="submit-btn">Add</button>
+        <button type="button" id="cancel-edit" class="btn alt" style="display:none">Cancel</button>
+      </form>
+
+      <div class="controls">
+        <input id="search" placeholder="Search tasks..." />
+        <button id="clear-completed" class="btn alt">Clear completed</button>
+      </div>
+
+      <ul id="tasks" class="tasks-list"></ul>
+    </main>
+
+    <footer>
+      <small>Made with ❤️ to keep you organized.</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

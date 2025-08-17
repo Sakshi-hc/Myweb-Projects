@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS todo_app CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE todo_app;
+
+CREATE TABLE IF NOT EXISTS tasks (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  description VARCHAR(1000),
+  completed BOOLEAN NOT NULL DEFAULT FALSE,
+  priority INT NOT NULL DEFAULT 2,
+  due_date DATETIME,
+  created_at DATETIME,
+  updated_at DATETIME
+);
